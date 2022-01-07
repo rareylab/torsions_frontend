@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Torsion Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="application.min.css">
+</head>
+<body>
+<div id="banner" class="bg-light p-2">
+    <div class="container-fluid">
+        <div class="float-left">
+            <a href="https://www.uni-hamburg.de/" target="_blank">
+                <img src="images/UHH-Logo_2010_Farbe_RGB.png"
+                     alt="Universität Hamburg - der Forschung, der Lehre, der Bildung">
+            </a>
+        </div>
+        <div class="float-right" style="height: 70px">
+            <div class="py-3">
+                <a href="https://www.zbh.uni-hamburg.de/" target="_blank"
+                   style="color: black; text-decoration: none">
+                    <h3>ZBH - Center for Bioinformatics</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container bg-white">
+    <h1>Help</h1>
+    <p>
+        The left-hand side of the application is the molecule viewer. The right-hand side is a tab
+        pane with various tabs that are explained below. These can be clicked on to switch from one
+        tab to another.
+    </p>
+    <h2>Upload</h2>
+    <p>
+        Upload a molecule file to the server using the file field. Only one file can be uploaded at
+        once. The file can only be an SDF and less than 10MB in size. The SDF may contain multiple
+        molecules. All rotatable bonds of all molecules will be classified.
+    </p>
+    <img class="img-fluid mx-auto d-block" src="images/upload.png" alt="Image of the upload tab">
+    <h2>Molecules</h2>
+    <p>
+        If a file contains multiple molecules these will be shown as different entries in the
+        molecules table. These can be clicked to change the shown molecule/conformation. The names
+        of the molecules are taken from the SDF. The quality annotation of each molecule shows the
+        worst quality of any rotatable bond in that particular molecule. Clicking the header of the
+        molecule table will sort by the clicked property (Entry, Name or Quality). The search field
+        can be used to filter the table by matching strings. The "Download TSV File" button will
+        download the raw output from the TorsionAnalyzer.
+    </p>
+    <img class="img-fluid mx-auto d-block" src="images/molecules.png"
+         alt="Image of the molecule tab">
+    <h2>Torsion Results</h2>
+    <p>
+        Every rotatable bond is listed as one torsion result in the torsion results table ta the
+        lower right of the "Torsion Results" tab. Clicking on either a row in the table or a
+        rotatable bond in the viewer will mark the row in the table and mark the bond in viewer. A
+        plot of the torsion angle distribution for the torsion rule the current rotatable bond has
+        matched can be seen in the top right. It can be switched to either a distribution of CSD or
+        PDB data. Below this plot is a full list of the torsion results for the current molecule.
+        Each row contains the measured dihedral angle, the quality according to its likelihood in
+        the CSD and the SMARTS pattern of the torsion rule that was matched. The SMARTS can be
+        easily copied using the copy button and, for example, visualized using the
+        <a href="https://smarts.plus">smarts.plus</a> website. Clicking the header of the torsion
+        results table will sort by the clicked property (Entry, Name or Quality). The search field
+        can be used to filter the table by matching strings.
+    </p>
+    <img class="img-fluid mx-auto d-block" src="images/torsion_results.png"
+         alt="Image of the torsion results tab">
+</div>
+<div id="footer" class="bg-light p-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex flex-row">
+                <a href="about.html" target="_blank" class="flex-grow-1 btn btn-outline-secondary">About</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="mailto:penner@zbh.uni-hamburg.de"
+                   class="flex-grow-1 btn btn-outline-secondary">Feedback</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="https://www.uni-hamburg.de/en/datenschutz.html"
+                   target="_blank"
+                   class="flex-grow-1 btn btn-outline-secondary">Privacy Policy</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="https://www.zbh.uni-hamburg.de/en/imprint.html"
+                   target="_blank"
+                   class="flex-grow-1 btn btn-outline-secondary">Legal Notice</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -39,6 +39,4 @@ cat src/TorsionMarker.js >> dist/application.min.js
 cat src/TorsionAnalyzerApp.js >> dist/application.min.js
 
 # help.html and images
-cp help.html dist/help.html
-cp about.html dist/about.html
 cp -r images dist/
