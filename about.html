@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Torsion Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="banner" class="bg-light p-2">
+    <div class="container-fluid">
+        <div class="float-left">
+            <a href="https://www.uni-hamburg.de/" target="_blank">
+                <img src="images/UHH-Logo_2010_Farbe_RGB.png"
+                     alt="Universität Hamburg - der Forschung, der Lehre, der Bildung">
+            </a>
+        </div>
+        <div class="float-right" style="height: 70px">
+            <div class="py-3">
+                <a href="https://www.zbh.uni-hamburg.de/" target="_blank"
+                   style="color: black; text-decoration: none">
+                    <h3>ZBH - Center for Bioinformatics</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content" class="flex-grow-1 container bg-white">
+    <h1>About</h1>
+    <p>
+        The torsions server visualizes the results of torsion bond classification into relaxed,
+        tolerable, and strained by the TorsionAnalyzer commandline tool. It is meant as a quick way
+        to find strained molecules, for example in a docking hit list. To justify classifying
+        molecules as strained, the torsions server provides CSD and PDB torsion angle frequency
+        statistics associated with chemical environments. These are the result of the following
+        publications:
+    </p>
+    <ul>
+        <li>
+            Schärfer, C.; Schulz-Gasch, T.; Hert, J.; Heinzerling, L. ; Schulz, B.; Inhester, T.;
+            Stahl, M.; Rarey, M. (2013). CONFECT: Conformations from an Expert Collection of Torsion
+            Patterns. <i>ChemMedChem.</i>, 56(5), 2016-2028.
+            <a href="https://doi.org/10.1002/cmdc.201300242" target="_blank">https://doi.org/10.1002/cmdc.201300242</a>
+        </li>
+        <li>
+            Guba, W.; Meyder, A.; Rarey, M.; Hert, J. (2016). Torsion Library Reloaded: A New
+            Version of Expert-Derived SMARTS rules for Assessing Conformations of Small
+            Molecules.<i>J. Chem. Inf. Model.</i>, 56(1), 1-5.
+            <a href="https://doi.org/10.1021/acs.jcim.5b00522" target="_blank">https://doi.org/10.1021/acs.jcim.5b00522</a>
+        </li>
+        <li>
+            Penner, P; Guba, W; Schmidt, R; Meyder, A; Stahl, M; Rarey, M. (submitted). The Torsion
+            Library: Semi-automated Improvement of Torsion Rules with SMARTScompare.
+        </li>
+    </ul>
+    <p>
+        A complete list of dependencies and their licenses can be found in the respective source
+        code repositories:
+    </p>
+    <ul>
+        <li>
+            <a href="https://www.github.com/rareylab/torsions/" target="_blank">Torsions Server</a>
+        </li>
+        <li>
+            <a href="https://github.com/rareylab/torsions_frontend/" target="_blank">
+                Torsions Frontend
+            </a>
+        </li>
+    </ul>
+    <p>
+        The University of Hamburg uses Matomo for web analysis. The torsions server does not use any
+        cookies. Further information about tracking on University of Hamburg websites can be found
+        in the <a href="https://www.uni-hamburg.de/en/datenschutz.html" target="_blank">Privacy
+        Policy</a>.
+    </p>
+</div>
+<div id="footer" class="bg-light p-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex flex-row">
+                <a href="about.html" target="_blank" class="flex-grow-1 btn btn-outline-secondary">About</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="mailto:penner@zbh.uni-hamburg.de"
+                   class="flex-grow-1 btn btn-outline-secondary">Feedback</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="https://www.uni-hamburg.de/en/datenschutz.html"
+                   target="_blank"
+                   class="flex-grow-1 btn btn-outline-secondary">Privacy Policy</a>
+            </div>
+            <div class="col d-flex flex-row">
+                <a href="https://www.zbh.uni-hamburg.de/en/imprint.html"
+                   target="_blank"
+                   class="flex-grow-1 btn btn-outline-secondary">Legal Notice</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
