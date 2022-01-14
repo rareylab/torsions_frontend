@@ -6,6 +6,8 @@ local GUI application for the TorsionAnalyzer. More information can be found in 
 Patrick Penner, Wolfgang Guba, Robert Schmidt, Agnes Meyder, Martin Stahl, and Matthias Rarey. (submitted).
 The Torsion Library: Semi-automated Improvement of Torsion Rules with SMARTScompare.
 
+A running instance ca be found here: [https://torsions.zbh.uni-hamburg.de/](https://torsions.zbh.uni-hamburg.de/)
+
 This particular frontend was an experiment in low-tech JS development. As such it explicitly avoids node and npm as
 much as possible. The local branch does use node and [electron](https://www.electronjs.org/) to deploy the static JS
 frontend as a standalone GUI.
